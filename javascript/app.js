@@ -166,12 +166,11 @@ console.log(title);
 const titles = document.querySelectorAll(".hello h1")
 console.log(titles)
 titles[2].innerText = "dfsfd";
-
 */
 
 
 // //================================================================
-// // ==== ＊ 6.자바스크립트로 html에 접근하여 사용하기 ====
+// // ==== ＊ 7. Event 생성및 활용 ====
 // // ● addEventListener("event", function) : event발생시 function을 실행시킨다 (괄호는 넣지않는다)
 // const h1 = document.querySelector(".hello h1:first-child");
 // function handleTitleClick() {
