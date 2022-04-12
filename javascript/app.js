@@ -209,12 +209,42 @@ titles[2].innerText = "dfsfd";
 // window.addEventListener("online", handleWindowOnline);
 
 //================================================================
-// ==== ＊ 6.자바스크립트로 html에 접근하여 사용하기 ====
-const h1 = document.querySelector(".hello h1:first-child");
+// ==== ＊ 8.자바스크립트로 html에 접근하여 사용하기 ====
+// ● 
+// const h1 = document.querySelector(".hello h1:first-child");
 
-function handleH1Click() {
-    console.log(h1.color.style);
-    h1.style.color = "blue";
+// function handleH1Click() {
+//     const Color = h1.style.color // 중복코드 변화 
+//     let newColor; // 값이 변하는 let을 생성함으로서 newColor 에 대한 값을 변경함
+//     if(Color === "blue") {
+//         newColor = "tomato"; 
+//     } else {
+//         newColor = "blue";
+//     }
+//     h1.style.color = newColor; // newColor의 값을 대입시킴
+// }
+
+// h1.addEventListener("click", handleH1Click);
+
+//================================================================
+// ==== ＊ 9. 자바스크립트로 css활용하기 ====
+// 자바스크립트로 style을 바로 건드는게 아닌 style에 값을 가져와 적용만해주는것
+// ● className & classList
+const h1 = document.querySelector("div.hello:first-child h1");
+function handleTitleClick() {
+    const clickedClass = "clicked"; // 여러개의 class를 가질 수 있다.
+    if(h1.classList.contains(clickedClass)) {
+        h1.classList.remove(clickedClass); // h1.className = "";
+    } else {
+        h1.classList.add(clickedClass);
+    }
 }
+h1.addEventListener("click", handleTitleClick);
 
-h1.addEventListener("click", handleH1Click);
+// ● toggle() 
+// : classList에서 className이 있는지를 확인하고 존재하면 삭제하고 없으면 생성
+function handleTitleClick() {
+    const clickedClass = "clicked"; 
+    h1.classList.toggle("clicked"); // toggle()하나로 코드를 줄임
+}
+h1.addEventListener("click", handleTitleClick);

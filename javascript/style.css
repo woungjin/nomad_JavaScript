@@ -1,5 +1,13 @@
 body {
     background-color: beige;
 }
-
-h1:nth-child(2)
+h1 { /* index.html */
+    color: cornflowerblue;
+}
+.clicked { /* 07-8&9 */
+    color: tomato;
+    transition : color 0.5s ease-in-out; /* 0.5초에걸친 효과적용 */
+}
+.sexy-font { /* 07-9 */
+    font-family: 'Courier New', Courier, monospace;
+}
