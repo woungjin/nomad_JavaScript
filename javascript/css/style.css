@@ -11,3 +11,6 @@ h1 { /* index.html */
 .sexy-font { /* 07-9 */
     font-family: 'Courier New', Courier, monospace;
 }
+.hidden {
+    display : none;
+}

@@ -9,6 +9,7 @@ https://nomadcoders.co/javascript-for-beginners/
 4. 함수 생성법 (function)
 5. 변수의 타입 확인 및 변경 (isNaN(), parseInt())
 6. html 접근하는 선택자(querySelector(), getElementId())
-7. Event종류들(addEventListener(), onclick(), window)
+7. Event종류들 및 css접근방법(addEventListener(), onclick(), window, // ● className & classList)
+8. 
 
 

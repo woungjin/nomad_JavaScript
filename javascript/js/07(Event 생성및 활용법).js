@@ -75,3 +75,5 @@ function handleTitleClick() {
     h1.classList.toggle("clicked"); // toggle()하나로 코드를 줄임
 }
 h1.addEventListener("click", handleTitleClick);
+
+//
