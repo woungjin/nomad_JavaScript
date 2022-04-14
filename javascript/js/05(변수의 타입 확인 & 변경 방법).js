@@ -18,4 +18,4 @@ if(isNaN(age) || age <0) {
     console.log("wow yuou are wirse")
 } else if(age > 80) {
     console.log("you can do whatever you want.")
-}
+} 
