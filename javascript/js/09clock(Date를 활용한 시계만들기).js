@@ -20,4 +20,4 @@ getClock(); // 1. 웹페이지 실행시 바로 실행되게끔 한다
 setInterval(getClock, 1000); //  5.getClock()가 실행된후 1초마다 갱신됨 setInterval(실행함수 , 간격(시간));
 // ● setTimeout() 
 // : 기본 동작이 한번 일어난다 
-setTimeout(getClock, 1000);
+setTimeout(getClock, 1000);  
