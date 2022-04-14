@@ -57,7 +57,7 @@ h1.addEventListener("click", handleH1Click);
 // ==== ＊ 9. 자바스크립트로 css활용하기 ====
 // 자바스크립트로 style을 바로 건드는게 아닌 style에 값을 가져와 적용만해주는것
 // ● className & classList
-const h1 = document.querySelector("div.hello:first-child h1");
+const h1 = document.querySelector("div.hello:first-child h1"); 
 function handleTitleClick() {
     const clickedClass = "clicked"; // 여러개의 class를 가질 수 있다.
     if(h1.classList.contains(clickedClass)) {
