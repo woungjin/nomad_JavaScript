@@ -4,7 +4,7 @@
 // : 소수점제거
 // ● Math.random()
 // : 랜덤한 수 생성
-const quotes = [
+const quotes = [ // 1. 객체 생성
     {
         quote: "목표를 잡고 계획을 하지말고 맡아진 일에대헤 최선을 다해보자",
         author: "-누군가-"
@@ -51,10 +51,10 @@ const quotes = [
     },
 ];
 
-const quote = document.querySelector("#quote span:first-child");
-const author = document.querySelector("#quote span:last-child")
+const quote = document.querySelector("#quote span:first-child"); // 2. 객체를 담을 태그를 가져옴
+const author = document.querySelector("#quote span:last-child") // 3. 객체담을 태그 가져옴
 
-const todaysQuote = quotes[Math.floor(Math.random()* quotes.length)];
+const todaysQuote = quotes[Math.floor(Math.random()* quotes.length)]; // 4. quotes객체의 랜덤한 값을 가져옴
 
-quote.innerText = todaysQuote.quote; 
-author.innerText = todaysQuote.author;
+quote.innerText = todaysQuote.quote;  // 5. 랜덤값 입력 
+author.innerText = todaysQuote.author; // 6. 랜덤값 입력
