@@ -43,4 +43,12 @@ const quotes = [
         quote: "고통이 우릴 끝낼건지 아니면 더 강하게 만들건지 우리의 선택에 달려있다",
         author: "-홀리-"
     },
-]
+];
+
+const quote = document.querySelector("#quote span:first-child");
+const author = document.querySelector("#quote span:last-child")
+
+const todaysQuote = quotes[Math.floor(Math.random()* quotes.length)];
+
+quote.innerText = todaysQuote.quote; 
+author.innerText = todaysQuote.author;
