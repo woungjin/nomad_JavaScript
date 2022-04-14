@@ -26,7 +26,7 @@ function paintGreetings(username) {
     greeting.innerHTML = `Hello ${username}`; // 2. 유저정보 값 입력
     greeting.classList.remove(HIDDEN_CLASSNAME); // 3. hidden 클래스 삭제
     
-}
+} 
 
 const savedUsername =  localStorage.getItem(USERNAME_KEY); // 1. 값이 있는지 여부
 if(savedUsername ===null) { // 2. 값의 유무 판단
