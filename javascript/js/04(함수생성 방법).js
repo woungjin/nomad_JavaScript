@@ -46,7 +46,7 @@ const calculator = {
     },
 };
 
-const plusResult = calculator.plus(2,4);
+const plusResult = calculator.plus(2,4); 
 const minusResult = calculator.min(plusResult, 5);
 const tiemsResult = calculator.times(10, minusResult);
 const divideResult = calculator.div(tiemsResult, plusResult)
