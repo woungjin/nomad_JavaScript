@@ -31,4 +31,4 @@ console.log(title);
 // ● querySelectorAll
 const titles = document.querySelectorAll(".hello h1")
 console.log(titles)
-titles[2].innerText = "dfsfd";
+titles[2].innerText = "dfsfd"; 
