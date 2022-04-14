@@ -14,4 +14,4 @@ console.log(bgImage)
 
 bgImage.src = `img/${chosenImage}`;
 
-document.body.appendChild(bgImage);
+document.body.appendChild(bgImage); // prepend() : 맨처음에 더함 / append : 맨마지막에 더함
